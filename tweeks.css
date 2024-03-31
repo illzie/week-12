@@ -1,0 +1,22 @@
+.btn-as-link {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+td:has(.btn-as-link) {
+  display: flex;
+  justify-content: end;
+  padding-block-start: 2rem;
+  padding-block-end: 2.8rem;
+  border-left: 0;
+}
+
+td:has([id*=_STATUS]) {
+  border-right: 0;
+}
+
+th > p,
+td > p {
+  padding-left: 0.5rem;
+}

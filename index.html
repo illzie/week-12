@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="tweeks.css">
+    <script src="https://kit.fontawesome.com/7ab2b2d914.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Promineo Tech | Week 12: Final Coding Project</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-sm p-2">
+            <div class="container-fluid">
+                <p class="navbar-brand">
+                    <span>Promineo Tech</span> | Week 12: Final Coding Project
+                </p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Git Repository</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="mx-5"><i class="fa fa-book-open"></i> My Reading List</h1>
+    </header>
+    <main class="container-fluid">
+        <form class="bg-body-tertiary border border-bottom-0 rounded-top pt-5 px-5 pb-3 mx-5 mt-4" id="createBook">
+            <h2 class="fs-3 mb-4">Add/Edit book</h2>
+            <div class="row">
+                <div class="col-md mb-4">
+                    <label class="form_label" for="createBook_name">Title</label>
+                    <input type="text" class="form-control" id="createBook_name" name="createBook_name">
+                </div>
+                <div class="col-md-5 mb-4">
+                    <label class="form_label" for="createBook_series">Series <span class="form-text">(If Applicable)</span></label>
+                    <input type="text" class="form-control" id="createBook_series" name="createBook_series">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mb-4">
+                    <label class="form_label" for="createBook_author">Author</label>
+                    <input type="text" class="form-control" id="createBook_author" name="createBook_author">
+                </div>
+                <div class="col-md mb-4 d-flex flex-column  justify-content-center">
+                    <label class="form_label" >Have you started this book?</label>
+                    <div class="d-flex align-items-start">
+                        <div class="form-check pe-3">
+                            <input class="form-check-input" type="radio" name="createBookReadStatus" id="createBookReadStatus_NO">
+                            <label class="form-check-label" for="createBookReadStatus_NO">
+                                No
+                            </label>
+                        </div>
+                        <div class="form-check pe-3">
+                            <input class="form-check-input" type="radio" name="createBookReadStatus" id="createBookReadStatus_Yes">
+                            <label class="form-check-label" for="createBookReadStatus_Yes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="createBookReadStatus" id="createBookReadStatus">
+                            <label class="form-check-label" for="createBookReadStatus">
+                                Finished
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                    <button class="btn btn-success px-5" id="addBook"><i class="fa fa-book pe-2" aria-hidden="true"></i> Save Book</button>
+                    <button class="btn text-danger" id="editBook"><i class="fa fa-trash pe-2" aria-hidden="true"></i> Delete</button>
+                
+            </div>
+        </form>
+        <article class="border rounded-bottom px-5 pb-4 pt-3 mx-5">
+            <section class="row my-3">
+                <h2 class="col-md-3 fs-3">Current list</h2>  
+                <form class="col-md d-flex" role="search">
+                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </section>
+            <section>
+                <div class="table-responsive-md">
+            <table class="table table-striped table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th><p>Title</p></th>
+                        <th class="w-25"><p>Author</p></th>
+                        <th class="w-25" colspan="2"><p>Started?</p></th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+                    <!-- <tr class="align-middle position-relative" id="B_000">
+                        <td>
+                            <p class="fs-4 mb-0" id="B_000_TITLE">Title</p>
+                            <p class="small" id="B_000_series">(Series)</p>
+                        </td>
+                        <td>
+                            <p id="B_000_AUTHOR" >Author Name</p>
+                        </td>
+                        <td>
+                            <p id="B_000_STATUS">Yes</p>
+                        </td>
+                        <td class="float-rightt"><button class="btn btn-as-link btn-sm" data-edit-entry ><i class="fa fa-edit pe-2" aria-hidden="true"></i>Edit</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+            </section>
+        </article>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
