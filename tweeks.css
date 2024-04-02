@@ -11,12 +11,3 @@ td:has(.btn-as-link) {
   padding-block-end: 2.8rem;
   border-left: 0;
 }
-
-td:has([id*=_STATUS]) {
-  border-right: 0;
-}
-
-th > p,
-td > p {
-  padding-left: 0.5rem;
-}
