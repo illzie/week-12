@@ -36,17 +36,11 @@
         <div class="form bg-body-tertiary border border-bottom-0 rounded-top pt-5 px-5 pb-3 mx-5 mt-4" id="createBook">
             <h2 class="fs-3 mb-4">Add/Edit book</h2>
             <div class="row">
-                <div class="col-md mb-4">
+                <div class="col-md-5 mb-4">
                     <label class="form_label" for="createBook_title">Title</label>
                     <input type="text" class="form-control" id="createBook_title" name="createBook_title">
                 </div>
-                <div class="col-md-5 mb-4">
-                    <label class="form_label" for="createBook_series">Series <span class="form-text">(If Applicable)</span></label>
-                    <input type="text" class="form-control" id="createBook_series" name="createBook_series">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 mb-4">
+                <div class="col-md mb-4">
                     <label class="form_label" for="createBook_author">Author</label>
                     <input type="text" class="form-control" id="createBook_author" name="createBook_author">
                 </div>
@@ -76,7 +70,6 @@
             </div>
             <div class="d-flex justify-content-between">
                     <button type="submit" class="btn btn-success px-5" id="saveBook" data-save-book-btn><i class="fa fa-book pe-2" aria-hidden="true"></i> Save Book</button>
-                    <button class="btn text-danger" id="deleteBook"><i class="fa fa-trash pe-2" aria-hidden="true"></i> Delete</button>
                 
             </div>
         </div>
@@ -90,7 +83,7 @@
             <table class="table table table-striped table-bordered" id="bookTable">
                 
                     <tr>
-                        <th colspan="2"><p>Title</p></th>
+                        <th><p>Title</p></th>
                         <th class="w-25"><p>Author</p></th>
                         <th class="w-25" colspan="2"><p>Started?</p></th>
                     </tr>
@@ -108,7 +101,7 @@
                         <td class="no-border no-border__right">
                             Yes
                         </td>
-                        <td class="float-rightt"><button class="btn btn-as-link btn-sm" data-edit-entry ><i class="fa fa-edit pe-2" aria-hidden="true"></i>Edit</button></td>
+                        <td><button class="btn btn-as-link btn-sm" ><i class="fa fa-edit pe-2" aria-hidden="true"></i>Edit</button></td>
                     </tr> -->
             </table>
         </div>
