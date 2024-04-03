@@ -1,8 +1,0 @@
-td:has(.btn) {
-  display: flex;
-  justify-content: end;
-}
-
-.btn-sm {
-  font-size: 0.7rem;
-}

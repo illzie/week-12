@@ -7,8 +7,9 @@ const bookTitle = document.getElementById('createBook_title')
 const bookAuthor = document.getElementById('createBook_author')
 const bookReadStatus = document.getElementsByName('createBookReadStatus')
 
-saveBook.addEventListener('click', () => {
 
+
+saveBook.addEventListener('click', () => {
     generateReadingListTable()
 })
 
@@ -24,8 +25,7 @@ function generateReadingListTable() {
     let editEntryRow = row.insertCell(3)
     editEntryRow.appendChild(createEditBtn(id))
     editEntryRow.appendChild(deleteBtn(id++))
-    editEntryRow.className = 'border-start-0'
-
+    editEntryRow.className = 'border-start-0 d-flex justify-content-end'
     resetInputs()
 
 }
@@ -37,7 +37,6 @@ function getRadioValue() {
 }
 function resetInputs() {
     bookTitle.value = ' '
-    bookSeries.value = ' '
     bookAuthor.value = ' '
     bookReadStatus.value = uncheckRadioBtn()
 }
@@ -53,10 +52,6 @@ function createEditBtn(id) {
     editBtn.onclick = () => {
         console.log(`Edit entry-${id}`)
         let editedRow = document.getElementById(`entry-${id}`)
-        bookTitle.value = editedRow.cells(0).innerHTML
-        bookSeries.value = editedRow.cells(1).innerHTML
-        bookAuthor.value = editedRow.cells(2).innerHTML
-        bookReadStatus.value = editedRow.cells(3).innerHTML
     }
     return editBtn
 

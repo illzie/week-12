@@ -3,15 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
-  "scripts": {
-    "sass": "sass --watch --update --no-source-map scss:"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.72.0"
-  },
   "dependencies": {
     "bootstrap": "^5.3.3"
   }

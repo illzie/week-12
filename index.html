@@ -38,11 +38,11 @@
             <div class="row">
                 <div class="col-md-5 mb-4">
                     <label class="form_label" for="createBook_title">Title</label>
-                    <input type="text" class="form-control" id="createBook_title" name="createBook_title">
+                    <input type="text" class="form-control" id="createBook_title" name="createBook_title" required>
                 </div>
                 <div class="col-md mb-4">
                     <label class="form_label" for="createBook_author">Author</label>
-                    <input type="text" class="form-control" id="createBook_author" name="createBook_author">
+                    <input type="text" class="form-control" id="createBook_author" name="createBook_author" required>
                 </div>
                 <div class="col-md mb-4 d-flex flex-column  justify-content-center">
                     <label class="form_label" >Have you started this book?</label>
@@ -70,42 +70,34 @@
             </div>
             <div class="d-flex justify-content-between">
                     <button type="submit" class="btn btn-success px-5" id="saveBook" data-save-book-btn><i class="fa fa-book pe-2" aria-hidden="true"></i> Save Book</button>
-                
             </div>
         </div>
-        <article class="border rounded-bottom px-5 pb-4 pt-3 mx-5">
-            <section class="row my-3">
-                <h2 class="col-md-3 fs-3">Current list</h2>  
-                <form class="col-md d-flex" role="search">
-            </section>
-            <section>
-                <div class="table-responsive-md">
-            <table class="table table table-striped table-bordered" id="bookTable">
-                
-                    <tr>
+        <article class="rounded-bottom mx-5">
+            <div class="table-responsive-md">
+                <table class="table table table-striped table-bordered" id="bookTable">
+                    <tr class="">
                         <th><p>Title</p></th>
                         <th class="w-25"><p>Author</p></th>
                         <th class="w-25" colspan="2"><p>Started?</p></th>
                     </tr>
-                
                     <!-- <tr class="align-middle position-relative" id="B_000">
                         <td>
                             Title
                         </td>
-                        <td class="no-border no-border__left">
-                            (Series)
-                        </td>
                         <td>
                             Author Name
                         </td>
-                        <td class="no-border no-border__right">
+                        <td class="border-end-0">
                             Yes
                         </td>
-                        <td><button class="btn btn-as-link btn-sm" ><i class="fa fa-edit pe-2" aria-hidden="true"></i>Edit</button></td>
+                        <td class="border-start-0">
+                            <button class="btn btn-as-link btn-sm" >
+                                <i class="fa fa-edit pe-2" aria-hidden="true"></i>Edit
+                            </button>
+                        </td>
                     </tr> -->
-            </table>
-        </div>
-            </section>
+                </table>
+            </div>
         </article>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
