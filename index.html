@@ -8,22 +8,35 @@
     <link rel="stylesheet" href="tweeks.css">
     <title>Promineo Tech | Week 12: Final Coding Project</title>
 </head>
-<body>
-    <header class="container-fluid bg-body-tertiary">
+<body class="bg-info-subtle">
+    <header class="container-fluid bg-info text-white">
 
-    <nav class="navbar navbar-expanded-lg">
+    <nav class="navbar navbar-expanded-lg pt-4">
         <div class="container-fluid">
-            <p><a class="brand"> Promineo Tech</a> | Week 12: Final Coding Project</p>
-            <p>
-                Iliana Franco | <a class="brand">Jan 2024</a>
-            </p>
+            <p><span class="text-info-emphasis fw-bolder"> Promineo Tech</span> | Week 12: Final Coding Project</p>
+            <p>Iliana Franco | <span class="text-info-emphasis fw-bolder">Jan 2024</span></p>
         </div>
     </nav>
     </header>
-
-
-
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <main class="container my-5 bg-light rounded-5">
+        <div class="p-3 pt-4 row">
+            <div class="col-md-1 me-4">
+            <label for="exampleFormControlTextarea1" class="form-label"><h1 class="fs-2">Notes</h1> </label></div>
+            <div class="col-md-8 ms-2">
+            <textarea style="border:none; background-color: transparent;" class="form-control border-bottom" placeholder="Start adding your thoughts here..." id="exampleFormControlTextarea1" rows="1"></textarea></div>
+            <div class="col-md">
+            <button class="btn btn-success"><i class="fa-regular fa-pen-to-square" aria-hidden="true"></i> Add Note</button></div>
+        </div>
+        <div class="p-3 pb-4 app">
+        </div>
+    </main>
+    <footer class="container-fluid bg-info text-white footer fixed-bottom py-4 text-center">
+        <nav  class=" navbar-expanded-lg ">
+            <a class="text-white" href="https://illzie.github.io/promineotech-coursework/">Back to Repository &#9166;</a>&nbsp;|&nbsp;
+            <a class="text-white" href="https://github.com/illzie/week-11">Git page &#8594;</a>
+        </nav>
+    </footer>
     <script type="module" src="script.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
