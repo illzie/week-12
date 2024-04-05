@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="tweeks.css">
     <title>Promineo Tech | Week 12: Final Coding Project</title>
 </head>
-<body class="bg-info-subtle">
+<body class="bg-body-secondary">
     <header class="container-fluid bg-info text-white">
 
     <nav class="navbar navbar-expanded-lg pt-4">
@@ -18,16 +18,21 @@
         </div>
     </nav>
     </header>
-    <main class="container my-5 bg-light rounded-5">
-        <div class="p-3 pt-4 row">
-            <div class="col-md-1 me-4">
-            <label for="exampleFormControlTextarea1" class="form-label"><h1 class="fs-2">Notes</h1> </label></div>
-            <div class="col-md-8 ms-2">
-            <textarea style="border:none; background-color: transparent;" class="form-control border-bottom" placeholder="Start adding your thoughts here..." id="exampleFormControlTextarea1" rows="1"></textarea></div>
-            <div class="col-md">
-            <button class="btn btn-success"><i class="fa-regular fa-pen-to-square" aria-hidden="true"></i> Add Note</button></div>
+    <main class="container my-5 bg-light rounded-3">
+        <div class="p-3 pt-4 d-flex">
+            <label for="exampleFormControlTextarea1" class="form-label"><h1 class="visually-hidden">Notes</h1> </label>
+            <textarea style="border:none; background-color: transparent;" class="form-control border-bottom" placeholder="Start adding your thoughts here..." id="exampleFormControlTextarea1" rows="1" data-textarea-auto-resize></textarea>
+            <button class="btn btn-outline-success"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
         </div>
-        <div class="p-3 pb-4 app">
+        <div class="p-3 pb-4 d-grid app">
+            <!-- <div class="card p-1">
+                <label for="randomID" class="form-control-sm text-secondary text-opacity-50">Created on 1.1.24 at 2:45pm</label>
+                <textarea style="border:0;outline:0;" class="card-body form-control-sm bg-white" name="randomID" id="randomID" data-textarea-auto-resize disabled>Saved note info goes here</textarea>
+                <div class="d-flex">
+                    <button class="btn btn_secondary"><i class="fa-regular fa-pen-to-square" aria-hidden="true"></i></button>
+                    <button class="btn btn_secondary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </div>
+            </div> -->
         </div>
     </main>
     <footer class="container-fluid bg-info text-white footer fixed-bottom py-4 text-center">
