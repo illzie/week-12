@@ -9,109 +9,21 @@
     <title>Promineo Tech | Week 12: Final Coding Project</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-sm p-2">
-            <div class="container-fluid">
-                <p class="navbar-brand">
-                    <span>Promineo Tech</span> | Week 12: Final Coding Project
-                </p>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Git Repository</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <h1 class="mx-5"><i class="fa fa-book-open"></i> My Reading List</h1>
-    </header>
-    <main class="container-fluid">
-        <div class="form bg-body-tertiary border border-bottom-0 rounded-top pt-5 px-5 pb-3 mx-5 mt-4" id="createBook">
-            <h2 class="fs-3 mb-4">Add/Edit book</h2>
-            <div class="row">
-                <div class="col-md mb-5 position-relative">
-                    <label class="form_label" for="createBook_title">Title</label>
-                    <input type="text" class="form-control" id="createBook_title" name="createBook_title">
-                    <div style="height:13px; font-size: 0.8rem; line-height: 0;" class="position-absolute lh-0 py-3 text-danger" data-error-message id="titleError"></div>
-                </div>
-                <div class="col-md-5 mb-5">
-                    <label class="form_label" for="createBook_series">Series <span class="fw-lighter">(if applicable)</span></label>
-                    <input type="text" class="form-control" id="createBook_series" name="createBook_series">
-                </div></div>
-                <div class="row">
-                <div class="col-md-6 mb-5">
-                    <label class="form_label" for="createBook_author">Author</label>
-                    <input type="text" class="form-control" id="createBook_author" name="createBook_author">
-                    <div style="height:13px; font-size: 0.8rem; line-height: 0;" class="position-absolute lh-0 py-3 text-danger" data-error-message id="authorError"></div>
-                </div>
-                <div class="col-md mb-5 position-relative">
-                    <label class="form_label pb-2" >Have you started this book?</label>
-                    <div class="d-flex justify-content-start">
-                        <div class="form-check ps-0">
-                            <input class="btn-check" type="radio" value="No" name="createBookReadStatus" id="createBookReadStatus_NO">
-                            <label class="btn btn-outline-secondary btn-sm" for="createBookReadStatus_NO" data-read-status-lable>
-                                No
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="btn-check" type="radio" value="Yes" name="createBookReadStatus" id="createBookReadStatus_Yes">
-                            <label class="btn btn-outline-secondary btn-sm" for="createBookReadStatus_Yes" data-read-status-lable>
-                                Yes
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="btn-check" type="radio" value="Finished" name="createBookReadStatus" id="createBookReadStatus_FINISHED">
-                            <label class="btn btn-outline-secondary btn-sm" for="createBookReadStatus_FINISHED" data-read-status-lable>
-                                Finished
-                            </label>
-                            <div style="height:13px; font-size: 0.8rem; line-height: 0; left:10px; bottom:-27px;" class="position-absolute lh-0  text-danger" data-error-message id="readingStatError"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md d-flex align-items-center mb-5">
-                    <button type="submit" class="btn btn-success px-5" data-save-book-btn><i class="fa fa-book pe-2" aria-hidden="true"></i> Save Book</button>
-                </div>
-            </div>
+    <header class="container-fluid bg-body-tertiary">
+
+    <nav class="navbar navbar-expanded-lg">
+        <div class="container-fluid">
+            <p><a class="brand"> Promineo Tech</a> | Week 12: Final Coding Project</p>
+            <p>
+                Iliana Franco | <a class="brand">Jan 2024</a>
+            </p>
         </div>
-        <article class="rounded-bottom mx-5">
-            <div class="table-responsive-md">
-                <table class="table table table-striped table-bordered" id="bookTable">
-                    <tr class="">
-                        <th colspan="2"><p>Title</p></th>
-                        <th class="w-25"><p>Author</p></th>
-                        <th class="w-25" colspan="2"><p>Started?</p></th>
-                    </tr>
-                    <!-- <tr class="align-middle position-relative" id="B_000">
-                        <td>
-                            Title
-                        </td>
-                        <td class="border-start-0 fw-lighter">
-                            Series
-                        </td>
-                        <td>
-                            Author Name
-                        </td>
-                        <td class="border-end-0">
-                            Yes
-                        </td>
-                        <td class="border-start-0">
-                            <button class="btn btn-as-link btn-sm" >
-                                <i class="fa fa-edit pe-2" aria-hidden="true"></i>Edit
-                            </button>
-                        </td>
-                    </tr> -->
-                </table>
-            </div>
-        </article>
-    </main>
+    </nav>
+    </header>
+
+
+
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
